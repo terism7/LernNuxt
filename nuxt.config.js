@@ -15,13 +15,21 @@ module.exports = {
     ]
   },
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/font-awesome',
     'bootstrap-vue/nuxt',
 
     // Or if you have custom bootstrap CSS...
     ['bootstrap-vue/nuxt', {
       css: false
     }],
+    
   ],
+  plugins: [
+    '~/plugins/axios'
+  ],
+  
+  
   /*
   ** Customize the progress bar color
   */
@@ -43,5 +51,6 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  
 }

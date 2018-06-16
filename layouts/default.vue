@@ -1,22 +1,22 @@
 <template>
+  
   <div>
     <div>
-      <b-nav>
-        <router-link tag="b-nav-item" to="/">
-          <a>Home</a>
-        </router-link>
-        <router-link tag="b-nav-item" to="/hello">
-          <a>Hello</a>
-        </router-link>
-        <router-link tag="b-nav-item" to="/alert">
-          <a>Alert</a>
-        </router-link>
-      </b-nav>
+      <navbar></navbar>
     </div>
-    <!-- nav-default.vue -->
     <nuxt/>
   </div>
+  
 </template>
+
+<script>
+import navbar from '~/components/layouts/nav.vue'
+export default {
+  components: {
+    navbar
+  }
+}
+</script>
 
 <style>
 html {

@@ -17,7 +17,12 @@ export default {
   components: {
     Hello,
     AppLogo
-  }
+  },
+  async asyncData({ app }) {
+  const ip = await app.$axios.$get('https://api-zcash.flypool.org/miner/:t1WFGi3k3LBYnjdi4chD1HPtXjhrYCzuGDm/dashboard')
+  console.log(ip.data)
+  return { ip }
+}
 }
 
 </script>
