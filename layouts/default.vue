@@ -1,5 +1,19 @@
 <template>
   <div>
+    <div>
+      <b-nav>
+        <router-link tag="b-nav-item" to="/">
+          <a>Home</a>
+        </router-link>
+        <router-link tag="b-nav-item" to="/hello">
+          <a>Hello</a>
+        </router-link>
+        <router-link tag="b-nav-item" to="/alert">
+          <a>Alert</a>
+        </router-link>
+      </b-nav>
+    </div>
+    <!-- nav-default.vue -->
     <nuxt/>
   </div>
 </template>

@@ -2,6 +2,7 @@ module.exports = {
   /*
   ** Headers of the page
   */
+ 
   head: {
     title: 'TERiSM Nuxt',
     meta: [
@@ -13,6 +14,14 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  modules: [
+    'bootstrap-vue/nuxt',
+
+    // Or if you have custom bootstrap CSS...
+    ['bootstrap-vue/nuxt', {
+      css: false
+    }],
+  ],
   /*
   ** Customize the progress bar color
   */
