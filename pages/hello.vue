@@ -1,13 +1,17 @@
 <template>
-  <section class="container">
-    <div>
-        <app-logo/>
-        <div class="title">
-          <hello/>
-        </div>
-    </div>
-    
-  </section>
+      <b-container class="bv-example-row">
+        <b-row>
+            <b-col class="text-center">
+              <app-logo/>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col class="text-center">
+              <hello/>
+            </b-col>
+        </b-row>
+      </b-container>
+        
 </template>
 
 <script>
