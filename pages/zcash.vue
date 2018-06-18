@@ -35,11 +35,11 @@
             <hr/>        
             <b-row>
                 <b-col>
-                    Zcoin ต่อวัน : {{data_api.coinsPerMin}}
+                    Zcash ต่อวัน : {{data_api.coinsPerMin}}
                 </b-col>
 
                 <b-col>
-                    Zcoin ต่อเดือน : {{data_api.coinsPerMonth}} $
+                    Zcash ต่อเดือน : {{data_api.coinsPerMonth}} $
                 </b-col>
             </b-row>            
         </b-container> 
