@@ -18,7 +18,7 @@
                     <span class="badge badge-dark">Status</span> : {{data_api.status}}
                 </b-col>
                 <b-col>
-                    <b-badge variant="dark">Unpaid</b-badge> : {{data_api.unpaid}} Zec
+                    
                 </b-col>
             </b-row>
             <hr/>
@@ -80,7 +80,7 @@
                 this.data_api.coinsPerMin = (this.data_api.data.coinsPerMin*60*24).toFixed(5)
                 this.data_api.coinsPerMonth= (this.data_api.data.coinsPerMin*60*24*31).toFixed(5)
                 this.data_api.unconfirmed = (this.data_api.data.unconfirmed/100000000).toFixed(4)
-                this.data_api.unpaid = (this.data_api.data.unpaid/10000000).toFixed(4)
+                this.data_api.unpaid = (this.data_api.data.unpaid/100000000).toFixed(4)
                 this.data_api.usdPerMin = (this.data_api.data.usdPerMin*60*24).toFixed(3)
                 this.data_api.usdPerMonth = (this.data_api.data.usdPerMin*60*24*30).toFixed(3)
             }
